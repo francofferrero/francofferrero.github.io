@@ -1,37 +1,14 @@
-## Welcome to GitHub Pages
-
-You can use the [editor on GitHub](https://github.com/francofferrero/francofferrero.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/francofferrero/francofferrero.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-<form>
+<!doctype html>
+<html>
+<head>
+<title>Note to Self</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="stylesheet" href="notetoself.css">
+<script src="notetoself4.js"></script>
+</head>
+<body>
+	<form>
 		<label for="note_color">Color: </label>
 		<select id="note_color">
 			<option value="LightGoldenRodYellow">yellow</option> <!-- #FAFAD2 -->
@@ -44,6 +21,11 @@ Your Pages site will use the layout and styles from the Jekyll theme you have se
 <!--
 		<input type="button" id="clear_button" value="Clear all Sticky Notes">
 -->
-</form>
+	</form>
+	
+	<ul id="stickies">
+	</ul>
+</body>
+</html>
 
 
