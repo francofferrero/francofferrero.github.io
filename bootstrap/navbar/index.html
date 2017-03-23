@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
   <script src="nb.js"></script>
 </head>
 <body>
@@ -17,6 +18,12 @@ function popup()
     alert("Hello World");
 }
 </script>
+  
+  <div ng-app="" ng-init="firstName='John'">
+  <p>Name: <input type="text" ng-model="name"></p>
+  <p ng-bind="name"></p>
+<p>The name is : <span ng-bind="firstName"></span></p>
+    </div> 
 
 <input type="button" value="Click Me!" onclick="popup()"><br/><br/>
   
