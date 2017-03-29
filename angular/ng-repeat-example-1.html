@@ -6,6 +6,8 @@
   <div ng-repeat="note in ctrl.notes">
     <span class="label"> {{note.label}}</span>
     <span class="status" ng-bind="note.done"></span>
+    <span class="id" ng-bind="note.id"></span>
+    <br>
   </div>
 
 <script
