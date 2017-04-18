@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.6/angular.js"></script>
+  </head>
+  <body>
+    <div ng-app="myApp">
+      <div ng-controller="DemoController">
+        <div>
+          {{ name | uppercase }}
+        </div>
+        <div>
+          {{ name }}
+        </div>
+        <div>
+          {{ 123.456789 | number: 2 }}
+        </div>
+        <div>
+          {{ 123 | currency }}
+        </div>
+        <div>
+          {{ 12342.923 | currency : "€ " : 2 }}
+        </div>
+        <div>
+          {{ today | date:'medium' }}
+        </div>
+        <div>
+          {{ today | date:'short' }}
+        </div>
+        <div>
+          {{ today | date:'fullDate' }}
+        </div>
+        <div>
+          {{ today | date:'longDate' }}
+        </div>
+        <div>
+          {{ today | date:'mediumDate' }}
+        </div>
+        <div>
+          {{ today | date:'shortDate' }}
+        </div>
+        <div>
+          {{ today | date:'mediumTime' }}
+        </div>
+        <div>
+          {{ today | date:'shortTime' }}
+        </div>
+        <div>
+          {{ today | date:'yyyy' }}
+        </div>
+        <div>
+          {{ today | date:'yy' }}
+        </div>
+        <div>
+          {{ today | date:'y' }}
+        </div>
+        <div>
+          {{ today | date:'MMMM' }}
+        </div>
+        <div>
+          {{ today | date:'MMM' }}
+        </div>
+        <div>
+          {{ today | date:'MM' }}
+        </div>
+        <div>
+          {{ today | date:'M' }}
+        </div>
+        <div>
+          {{ today | date:'dd' }}
+        </div>
+        <div>
+          {{ today | date:'d' }}
+        </div>
+        <div>
+          {{ today | date:'EEEE' }}
+        </div>
+        <div>
+          {{ today | date:'EEE' }}
+        </div>
+        <div>
+          {{ today | date:'HH' }}
+        </div>
+        <div>
+          {{ today | date:'H' }}
+        </div>
+        <div>
+          {{ today | date:'hh' }}
+        </div>
+        <div>
+          {{ today | date:'h' }}
+        </div>
+        <div>
+          {{ today | date:'mm' }}
+        </div>
+        <div>
+          {{ today | date:'m' }}
+        </div>
+        <div>
+          {{ today | date:'ss' }}
+        </div>
+        <div>
+          {{ today | date:'s' }}
+        </div>
+        <div>
+          {{ today | date:'.sss' }}
+        </div>
+        <div>
+          {{ today | date:'a' }}
+        </div>
+        <div>
+          {{ today | date:'Z' }}
+        </div>
+        <div>
+          {{ today | date:'MMM d, y' }}
+        </div>
+        <div>
+          {{ today | date:'EEE, d, M' }}
+        </div>
+        <div>
+          {{ today | date:'hh:mm:ss.sss' }}
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="js/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.6/angular.js"></script>
+  </head>
+  <body>
+    <div ng-app="myApp">
+      <div ng-controller="DemoController">
+        <div>
+          {{ ['Ari', 'Lerner', 'Likes', 'To', 'Eat', 'Pizza'] | filter:'e' }}
+        </div>
+        <div>
+          {{ [{
+              'name': 'Ari',
+              'City': 'San Francisco',
+              'favorite food': 'Pizza'
+            }, {
+              'name': 'Nate',
+              'City': 'San Francisco',
+              'favorite food': 'indian food'
+          }] | filter:{'favorite food': 'Pizza'} }}
+        </div>
+        <div>
+          {{ ['Ari', 'likes', 'to', 'travel'] | filter:isCapitalized }}
+        </div>
+        <div>
+          {{ {'name': 'Ari', 'City': 'San Francisco'} | json }}
+        </div>
+        <div>
+            {{ 'San Francisco is very cloudy' | limitTo:3 }}
+        </div>
+        <div>
+            {{ 'San Francisco is very cloudy' | limitTo:-6 }}
+        </div>
+        <div>
+            {{ ['a', 'b', 'c', 'd', 'e', 'f'] | limitTo:1 }}
+        </div>
+        <div>
+            {{ "San Francisco is very cloudy" | lowercase }}
+        </div>
+        <div>
+            {{ "San Francisco is very cloudy" | uppercase }}
+        </div>
+        <div>
+            {{ 123456789 | number }}
+        </div>
+        <div>
+            {{ 1.234567 | number:2 }}
+        </div>
+        <div>
+            {{ [{
+              'name': 'Ari',
+              'status': 'awake'
+            }, {
+              'name': 'Q',
+              'status': 'sleeping'
+            }, {
+            'name': 'Nate',
+            'status': 'awake'
+          }] | orderBy:'name' }}
+        </div>
+        <div>
+            {{ [{
+              'name': 'Ari',
+              'status': 'awake'
+            }, {
+              'name': 'Q',
+              'status': 'sleeping'
+            }, {
+            'name': 'Nate',
+            'status': 'awake'
+          }] | orderBy:'name':true }}
+        </div>
+        <div>
+          {{ 'ginger LOVES dog treats' | lowercase | capitalize }}
+        </div>
+
+      </div>
+    <script type="text/javascript" src="js/app.js"></script>
+    </div>
+  </body>
+</html>
