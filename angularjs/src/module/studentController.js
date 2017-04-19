@@ -5,10 +5,10 @@ mainApp.controller("studentController", function($scope) {
       fees:500,
       
       subjects:[
-         {name:'Physics',marks:70},
-         {name:'Chemistry',marks:80},
-         {name:'Math',marks:65},
-         {name:'English',marks:75},
+         {name:'Fisica',marks:70},
+         {name:'Quimica',marks:80},
+         {name:'Matematicas',marks:65},
+         {name:'Ingles',marks:75},
          {name:'Hindi',marks:67}
       ],
       
